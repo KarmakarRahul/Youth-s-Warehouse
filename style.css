@@ -1,0 +1,543 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--primary-text-color);
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #480bcd;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* utility class */
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700; 
+}
+
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+
+}
+
+.primary-btn {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-btn:hover {
+    background-color: rgb(5, 5, 82);
+}
+
+.secondary-btn {
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important ;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.secondary-btn:hover {
+    background-color: rgb(5, 5, 82);
+    color: white !important;
+}
+
+ /* For top Banner */
+
+.top-banner {
+    
+    background-color: #0d0127;
+    overflow: hidden;
+    
+}
+
+
+.banner-text {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.main-nav {
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.company-logo img {
+    width: 300px; 
+}
+
+.nav-link {
+    flex-basis: 730px;
+}
+.nav-link ul {
+     justify-content: end;
+     gap: 40px;
+}
+
+.nav-toogle {
+    display: none;
+}
+
+.header {
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+/* .right-head {
+    width: 60vh;
+} */
+
+.right-head img {
+    width: 100%;
+
+}
+
+
+.left-head {
+    width: 70vw;
+}
+
+.left-head p {
+    margin-top: 5px;
+    /* margin-left: 131px; */
+    margin-left: 30%;
+}
+
+.left-head a {
+    margin-top: 50px;
+    /* margin-left: 80px; */
+    margin-left: 20%;
+}
+
+.product {
+    margin-top: 30px;
+    overflow: auto;
+    
+}
+
+.product img {
+    width: 400px;
+}
+
+.bike {
+    padding: 0 10px;
+}
+
+
+.bike h3:hover {
+    color: #2503b8;
+    cursor: pointer;
+}
+
+.bike h3 {
+    /* display: inline; */
+    margin-top: 10px;
+}
+
+.bike p {
+    /* display: inline; */
+    font-size: 1rem;
+}
+
+.lower-para {
+    display: inline;
+    font-size: 0.8rem !important;
+}
+
+.lower-para:hover {
+    font-size: 1rem !important;
+    cursor: pointer;
+}
+
+.read-more {
+    font-size: .65rem;
+    display: block;
+    color: rgb(4, 96, 166);
+}
+
+.specification-bike {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.overview {
+    margin-top: 30px;
+    justify-content: space-between;
+    gap: 60px;
+    /* overflow: hidden; */
+}
+
+.overview-img img {
+    width: 100%;
+}
+
+.spec-overview {
+    margin-left: 0px;
+    width: 50vw;
+}
+
+.specification-bike {
+    overflow: hidden;
+}
+
+.spec-overview p {
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.sub-list {
+    position: absolute;
+    /* border: 1px solid red; */
+    /* margin-top: 20px; */
+    padding: 10px 10px;
+    background: white;
+    border-radius: 5px;
+    /* display: none; */
+    height: 0px;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 600ms;
+    transition-timing-function: ease-in-out;
+
+}
+
+.parent:hover .sub-list {
+    /* height: max-content; */
+    height: 400px;
+    /* height: 100%; */
+}
+
+.sub-list a {
+    height: 1rem;
+    cursor: pointer;
+}
+.sub-list :first-child{
+margin-top: 20px;
+}
+
+.sub-list a:hover {
+    color: #f24137;
+}
+
+.fa-solid {
+    margin-left: 5px;
+}
+
+.ready-to-ride {
+    /* background: rgb(156, 10, 156); */
+    /* background: linear-gradient(rgb(156, 10, 156),rgb(228, 163, 228)); */
+    background:linear-gradient(#6E45E2 , #88D3CE );
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    height: 250px;
+    width: 100%;
+}
+
+.ready-to-ride h3 {
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.ready-to-ride h3:hover {
+    color: darkblue;
+}
+
+.ready-to-ride a {
+    color: rgb(24, 75, 121);
+}
+
+
+/* #6E45E2 #*/
+
+.footer {
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.logos {
+   margin-top: 20px;
+}
+
+ .fa-brands {
+    width: 40px;
+} 
+
+.info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.fa-brands:hover {
+    color: #2294ed;
+}
+
+#insta:hover {
+    color: #f24137;
+}
+
+#utube:hover {
+    color: red;
+}
+
+.log img {
+    margin: auto;
+    width: 33%;
+}
+
+.log {
+    width: 100vw;
+    margin-top: 60px;
+    display:flex ;
+    justify-content: center;
+    overflow:hidden;
+}
+
+@media screen and (max-width: 991px) {
+    .nav-toogle {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .main-nav {
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .main-nav-toogle {
+        overflow: initial;
+    }
+
+    .nav-link {
+        /* display: none; */
+        position: absolute;
+        background:white;
+        border-radius: 12px;
+        width: 50%;
+        top: 100%;
+        right: -100%;
+        padding-block: 20px ;
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav-link.active {
+        right: 10%;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sub-list {
+        overflow: scroll;
+        font-size: 0.8rem;
+        /* width: 100vw; */
+    }
+}
+
+@media screen and (min-width:768px) and (max-width : 991px ) {
+    
+    .right-head {
+        width: 60vw;
+    }
+    
+    .in-para {
+        padding-right: 20px;
+        margin-top: 30px;
+        height: 40vh;
+        overflow: scroll;
+    }
+
+    .in-para p {
+        margin-top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    
+    .header {
+        margin-top: 40px;
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .right-head {
+        width: 90vw;
+    }
+
+    .left-head {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .left-head a {
+        width: 90%;
+        margin-left: 0%;
+    }
+    
+   
+    .overview {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .for-media {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .overview-img {
+        width:  90vw;
+    }
+
+    .spec-overview {
+        width: 90vw;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+      
+    .small-bold-text {
+        font-size: 0.5rem;
+        font-weight: 300; 
+    }
+
+    .company-logo img {
+        width: 150px; 
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 0.8rem;
+        color: var(--secondary-text-color);
+        line-height: 1.2rem;
+    }
+
+    .product img {
+        width: 300px;
+    }
+
+    .in-para {
+        padding-right: 20px;
+        margin-top: 30px;
+        height: 20vh;
+        overflow: scroll;
+    }
+
+    .in-para p {
+        margin-top: 0px;
+    }
+
+    .ready-to-ride {
+        height: 150px;
+    }
+
+    .log {
+        margin-top: 40px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .info {
+        align-items: center;
+    }
+
+    .sub-foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
